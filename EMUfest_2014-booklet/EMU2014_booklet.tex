@@ -1,0 +1,216 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt, twoside, a5paper]{extreport}
+\usepackage{lipsum} % ----------------------------------------------------------- cancellabile
+\usepackage{blindtext}	% dummy text
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage{latexsym}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{parallel}	% bilingual text in two columns
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[margin=1cm]{geometry}
+
+\usepackage{multicol}
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % they need to be placed in specific locations with the [H] (e.g. \begin{table}[H]) 
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+% \usepackage{fancyhdr} % Headers and footers
+% \pagestyle{fancy} % All pages have headers and footers
+% \fancyhead{} % Blank out the default header
+% \fancyfoot{} % Blank out the default footer
+% \fancyhead{}%[C]{Sei volte EMUfest  $\bullet$ Novembre 2013 }%$\bullet$ Vol. XXI, No. 1} % Custom header text
+% \fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+%~\clearpage
+
+\title{\vspace{-15mm}\fontsize{50}{60}\selectfont\textbf{EMUfest VII}} % Article title
+
+\author{
+\large
+\textsc{Conservatorio di Musica Santa Cecilia}\\[2mm] % Your name
+\normalsize 20 - 24 october 2014 \\ % Your institution
+\normalsize Rome % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagestyle{empty}
+\maketitle % Insert title
+%\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+
+\section*{23 ottobre 2014 -- ore 18:00}
+\subsection*{\textsf{Aula Bianchini\\
+	{\small IL SUONO DI PIERO 01\\}}}
+
+{\fontsize{50}{60}\selectfont \textit{Concerto\\ Acusmatico}}
+\bigskip
+
+%Due festival europei di livello internazionale}}
+
+\section*{}
+	
+% start two column, bilingual environment
+\begin{Parallel}[c]{0.47\textwidth}{0.47\textwidth}
+	
+	\selectlanguage{italian}	% select english language
+\ParallelLText{
+	
+	ITA:\\
+	\lipsum[1-2]
+	
+	}
+
+	\selectlanguage{english}
+\ParallelRText{
+	
+	ENG:\\
+	\lipsum[2-3]
+	
+}
+
+	% close current paragraph, containing the two bilingual columns
+	\ParallelPar
+	\clearpage
+
+%----------------------------------------------------------------------------------------
+
+\section*{23 ottobre 2014 -- ore 20:30}
+\subsection*{\textsf{Sala Accademica\\
+	{\small CONCERTO 04\\}}}
+
+{\fontsize{50}{60}\selectfont \textit{Concerto\\ Live Electronics}}
+\bigskip
+
+%Due festival europei di livello internazionale}}
+
+\section*{}
+	
+% start two column, bilingual environment
+%\begin{Parallel}[c]{0.47\textwidth}{0.47\textwidth}
+	
+	\selectlanguage{italian}	% select english language
+\ParallelLText{
+	
+	ITA:\\
+	\lipsum[1-2]
+	
+	}
+
+	\selectlanguage{english}
+\ParallelRText{
+	
+	ENG:\\
+	\lipsum[2-3]
+	
+}
+
+	% close current paragraph, containing the two bilingual columns
+	\ParallelPar
+	\clearpage
+
+%----------------------------------------------------------------------------------------
+
+\section*{24 ottobre 2014 -- ore 18:00}
+\subsection*{\textsf{Aula Bianchini\\
+	{\small IL SUONO DI PIERO 02\\}}}
+
+{\fontsize{50}{60}\selectfont \textit{Concerto\\ Acusmatico}}
+\bigskip
+
+%Due festival europei di livello internazionale}}
+
+\section*{}
+	
+% start two column, bilingual environment
+%\begin{Parallel}[c]{0.47\textwidth}{0.47\textwidth}
+	
+	\selectlanguage{italian}	% select english language
+\ParallelLText{
+	
+	ITA:\\
+	\lipsum[1-2]
+	
+	}
+
+	\selectlanguage{english}
+\ParallelRText{
+	
+	ENG:\\
+	\lipsum[2-3]
+	
+}
+
+	% close current paragraph, containing the two bilingual columns
+	\ParallelPar
+	\clearpage
+
+%----------------------------------------------------------------------------------------
+
+\section*{24 ottobre 2014 -- ore 20:30}
+\subsection*{\textsf{Sala Accademica\\
+	{\small CONCERTO 05\\}}}
+
+{\fontsize{50}{60}\selectfont \textit{Concerto\\ Live Electronics}}
+\bigskip
+
+%Due festival europei di livello internazionale}}
+
+\section*{}
+	
+% start two column, bilingual environment
+%\begin{Parallel}[c]{0.47\textwidth}{0.47\textwidth}
+	
+	\selectlanguage{italian}	% select english language
+\ParallelLText{
+	
+	ITA:\\
+	\lipsum[1-2]
+	
+	}
+
+	\selectlanguage{english}
+\ParallelRText{
+	
+	ENG:\\
+	\lipsum[2-3]
+	
+}
+
+	% close current paragraph, containing the two bilingual columns
+	\ParallelPar
+	\clearpage
+
+
+\end{Parallel}
+
+\end{document}
