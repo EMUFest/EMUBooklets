@@ -65,49 +65,7 @@
 \newtcbox{\mybox}{nobeforeafter,colframe=supercolor,colback=supercolor,boxrule=0.5pt,arc=8pt,
   boxsep=0pt,left=2pt,right=2pt,top=6pt,bottom=2pt,tcbox raise base}
 
-
-
-%----------------------------------------------------------------------------------------
-%	NEW COMMANDS
-%----------------------------------------------------------------------------------------
-
-\newcommand{\greco}[1]{%
-\begin{otherlanguage*}{greek}#1\end{otherlanguage*}}
-
-\newcommand{\brano}[6]{%
-\noindent \textsc{#1}\\ %
-\noindent \textbf{\textit{#2}} -- #3\\%
-\noindent #4\\ %
-\noindent #5 -- \textsc{#6}%
-\\
-}%
-
-\newcommand{\installazione}[4]{%
-\noindent \textsc{#1}\\ %
-\noindent \textbf{\textit{#2}} -- #3\\%
-\noindent #4%
-\\
-}%
-
-%: #1 autore, #2 titolo, #3 anno ed esecuzione, #4 descrizione, #5 strumenti, #6 esecutore
-
-\newcommand{\descrizione}[2]{%
-\noindent \textbf{\textit{#1}} %
-#2 %
-\\
-}%
-
-\newcommand{\acusmatico}[3]{%
-\noindent \textsc{#1}\\ %
-\noindent \textbf{\textit{#2}} -- #3%
-\\
-}%
-
-\newcommand{\biografia}[2]{%
-\noindent \textsc{#1} %
-#2 %
-\medskip
-}%
+\input{comandi2015.tex}
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -147,7 +105,6 @@
 \maketitle 
 
 
-
 %----------------------------------------------------------------------------------------
 
 \section*{20 ottobre 2014 -- ore 20:30}
@@ -168,48 +125,8 @@ L’innesco (trigger), la dinamicità dell’azione nel processo creativo, trova
 
 \begin{multicols}{2}
 
-\brano{Silvia Lanzalone}
-{Èleghos}{2014}
-{per flauto aumentato, tubo risonante ed elettronica}
-{flauto}{Gianni Trovalusci}
+\input{Atto01.tex}
 
-\installazione{Marco Ferrazza}
-{Radiale}{2014 (prima esecuzione italiana)}
-{acusmatico}
-
-\brano{Agostino Di Scipio}
-{Studio sul rumore di fondo, nel tratto vocale (Ecosistemico udibile n.3b)}{2004/2005 (prima esecuzione assoluta)}
-{per tre voci femminili}
-{voci}{Concetta Cucchiarelli, \\Virginia Guidi, Angelina Yershova}
-
-\brano{Feed-Band} %(Valentino De Luca, Francesco Quercia, Sara Disanto, Antonio Scarcia, Giuliano Scarola, Francesco Scagliola)}
-{A Sad Song}{2013}
-{feedback, indeterminazione e forma aperta di una performance}
-{esecutori}{Valentino De Luca, Francesco Quercia, Sara Disanto, Giuliano Scarola, Antonio Scarcia, Francesco Scagliola}
-
-%\hline
-
-\vspace{.5cm}
-
-\descrizione{Èleghos}{Il titolo evidenzia gli aspetti evocativi derivanti dal riferimento alla cultura ellenistica, in sintonia con l’antico termine greco \greco{ἐλεγεῖα} (eleghéia), o elegìa, e la parola \greco{έλεγος} (èleghos), il cui significato può essere indicato come "canto accompagnato dal flauto". Èleghos è stato scritto per il flautista Gianni Trovalusci.
-Il flauto aumentato può essere considerato come una reinterpretazione del flauto moderno, le cui caratteristiche risultano rinnovate relativamente ad aspetti timbrici, di diffusione acustica e di controllo. Lo strumento, denominato Reso-Flute, è prodotto applicando al corpo del flauto tradizionale alcuni microfoni e sensori, allo scopo di rilevare dettagli sonori e gestuali. Il suono viene diffuso da un tubo risonante accordato sulle stesse frequenze di risonanza individuate dai microfoni interni allo strumento.
-Reso-Flute è ideato e realizzato da Silvia Lanzalone in collaborazione con Antonio Marra (\href{http://www.resocap.it/}{www.resocap.it}) ed utilizza un flauto Vivaldi (\href{http://www.flautivivaldi.com/}{www.flautivivaldi.com}).}
-
-%in caso di cambiamento grafico mettere in nota: Il flauto aumentato Reso-Flute utilizza un flauto Vivaldi
-
-\descrizione{Radiale}{In \textit{Radiale} c'è un nucleo formato da pochi elementi sonori sviluppati lungo i vari corsi. Il pezzo si organizza in diverse direzioni derivate da quella originaria materia, assume diversi aspetti allo scopo di dimostrare diverse possibilità di espressione, ma, soprattutto, incoraggia a pensare le differenti modalità di arrangiare i segnali acustici a mano.}
-
-
-\descrizione{Studio sul rumore di fondo, nel tratto vocale (Ecosistemico udibile n.3b)}{I brani e le installazioni del progetto \textit{Ecosistemico udibile} sono reti di interazioni sonore operanti in accoppiamento strutturale con l'ambiente che ospita l’esecuzione, nell’unità di tempo e spazio dell’esperienza. Istante dopo istante, il processo esecutivo crea le condizioni per la propria sopravvivenza (identità sistemica) e per le mutazioni di forma che ne emergono (differenziazione), trovandone le risorse nello spazio che accoglie l'esecuzione e l'ascolto. Lo \textit{Studio sul rumore di fondo} (commissionde del DAAD di Berlino, 2005) prova a far emergere qualcosa di musicale a partire da ciò che viene solitamente escluso dall'ascolto: si parte con un niente-di-suono e si prova a farne qualcosa nel corso dell’esecuzione, con l’ausilio di alcuni microfoni, alcuni altoparlanti, un computer. Nello \textit{Studio sul rumore di fondo, nel tratto vocale} questo stesso processo viene reso operativo in una nicchia più piccola dello spazio esecutivo, ma anche più flessibile: la bocca e il tratto vocale del corpo umano. Un microfono in miniatura sonda la cavità orale rilevandone residui sonori non-intenzionali, piccoli e involontari movimenti muscolari. Eventualmente, se l’equilibrio, incerto e variabile, tra rumore-di-fondo-interno (bocca) e rumore-di-fondo-intorno (sala) sfugge al controllo, l'esecutore deve ricorrere a misure di sicurezza e, con un minimo di violenza, reintegrare temporaneamente un migliore equilibrio dinamico. La versione presentata oggi è polifonica, e introduce un’ulteriore sistemico livello, relativo alla dinamica di interazione e di equilibrio tra i partecipanti all’esecuzione. I quali riescono ad agire in "ensemble" solo se, durante la performance, riescono ad ascoltare ed a procedere secondo intenzioni e decisioni comuni. }
-
-
-\descrizione{A Sad Song}{è una composizione tripartita per chitarre, speakers, nastro e live electronics.
-\textit{A Sad Song} è il desiderio di approdare a differenti traguardi, di percorrere e varcare spazi ancora inesplorati. Alla ricerca di modalità espressive nuove si serve di strumenti tradizionali utilizzando di essi tuttavia caratteristiche non consuete, ponendo al centro della realizzazione un elemento onnipresente nei vari parametri della musica senza il quale l'orecchio umano non potrebbe percepire e dunque trasformare in sensazioni e emozioni quello che ascolta, il feedback.}
-
-
-\descrizione{A contemporary Dawn: a wor(l)d soundscape}{Al pari di altre categorie dell'arte, \textit{accusata} di essere astratta e lontana dalla realtà: la musica adopera l'illusione per affrontare l'illusione stessa. Ma questo non significa allontanarsi dal mondo, bensì amarlo disperatamente. La musica è un'occasione per adottare l'incertezza come principio di funzionamento, mettendo in discussione la cultura fino a portarla al suo estremo.
-\textit{A contemporary Dawn} è un paesaggio sonoro che gioca con le dimensioni. Questa performance interagisce con i suoi ascoltatori attraverso l’uso di Twitter: ogni tweet che include l’hashtag \textit{\#dawnscape} può modificare lo spazio e i movimenti di un viaggio musicale che attraversa il pubblico, investigando un linguaggio musicale che evolve e involve dal secolo scorso.
-Fluttuante nello spazio l'Atlante - così come lo abbiamo conosciuto finora - cerca nella profondità del tempo e nel dedalo di vecchie e nuove reti: una storia differente. Un’alba nuova.}
 
 \end{multicols}
 
