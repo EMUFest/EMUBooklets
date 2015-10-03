@@ -18,6 +18,8 @@
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{float} % they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
 
+\usepackage{afterpage}
+
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{epstopdf}
@@ -64,6 +66,12 @@
 
 \newtcbox{\mybox}{nobeforeafter,colframe=supercolor,colback=supercolor,boxrule=0.5pt,arc=8pt,
   boxsep=0pt,left=2pt,right=2pt,top=6pt,bottom=2pt,tcbox raise base}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 
 \input{comandi2015.tex}
 
@@ -488,10 +496,9 @@ L'esibizione Atto XI racchiude cinque brani che inglobano le varie forme della m
 
 \end{multicols}
 
-\clearpage
+\afterpage{\blankpage}
 
-
-
+\afterpage{\blankpage}
 
 %----------------------------------------------------------------------------------------
 
