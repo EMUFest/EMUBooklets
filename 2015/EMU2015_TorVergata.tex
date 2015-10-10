@@ -1,0 +1,248 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTex
+
+
+\documentclass[8pt, twoside, a5paper]{extreport}
+\usepackage{lipsum} % ----------------------------------------------------------- cancellabile
+\usepackage{blindtext}	% dummy text
+
+\usepackage{latexsym}
+\usepackage[polutonikogreek, italian, english]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1cm]{geometry}
+
+\usepackage{multicol}
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+
+\usepackage{afterpage}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+
+\usepackage{pst-barcode}
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+% \usepackage{fancyhdr} % Headers and footers
+% \pagestyle{fancy} % All pages have headers and footers
+% \fancyhead{} % Blank out the default header
+% \fancyfoot{} % Blank out the default footer
+% \fancyhead{}%[C]{Sei volte EMUfest $\bullet$ Novembre 2013 }%$\bullet$ Vol. XXI, No. 1} % Custom header text
+% \fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\renewcommand{\thefootnote}{\textasteriskcentered}
+
+\usepackage{mwe,tikz}
+\usepackage{tcolorbox}
+
+\usepackage{color}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Source Sans Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Source Sans Pro}
+\setmonofont[]{Source Code Pro}
+
+\newfontfamily{\svolk}{Volkhov}
+
+\linespread{1.03}
+
+\usepackage{lipsum}
+
+\definecolor{supercolor}{RGB}{3,39,36}
+
+%\topmargin -2.66in
+
+\newtcbox{\mybox}{nobeforeafter,colframe=supercolor,colback=supercolor,boxrule=0.5pt,arc=8pt,
+  boxsep=0pt,left=2pt,right=2pt,top=6pt,bottom=2pt,tcbox raise base}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{comandi2015.tex}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{
+	\svolk{CONSERVATORIO DI MUSICA S. CECILIA} \\
+	%\vspace{-15mm}
+	\fontsize{50}{50}
+	\svolk{
+		\emph{
+			EMUFest 2015
+			}
+		}
+	} % Article title
+
+\author{
+	\textsc{Conservatorio di Musica Santa Cecilia} \\
+	5 -- 10 ottobre 2015 \\
+	\textsc{Università di Roma Tor Vergata} \\
+	13 e 14 ottobre 2015 \\
+	Roma
+}
+
+\vfill
+
+\date{}
+
+%\dedica{.2\textwidth}{\small A Monica:\\
+%per tutto ciò che mi hai insegnato\\
+%e per tutto ciò che ancora avresti dovuto insegnarmi.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagestyle{empty}
+\maketitle 
+
+\afterpage{\blankpage}
+
+\clearpage
+
+~\vfill
+
+\input{motto.tex}
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+
+
+\clearpage
+%----------------------------------------------------------------------------------------
+
+\section*{13 ottobre 2015 -- ore 18:00}
+
+\subsection*{{\small Concerto Acusmatico \& Live Electronics\footnote{ Il concerto verrà trasmesso in diretta streaming da Radio Cemat}} \\
+	\textsf{Auditorium Ennio Morricone}}
+
+{\fontsize{30}{30} \svolk{\emph{ATTO XI}}}
+
+\subsection*{\textsf{Regia del suono di Massimiliano Mascaro}}
+
+\begin{quote}
+
+{\svolk \small
+\begin{quote}Vieni, disse la Musa,\\
+cantami un canto che nessun poeta ha mai cantato,\\
+cantami l'universale.\\
+Nella nostra vasta terra,\\
+in mezzo alla volgarità smisurata e alla feccia,\\
+racchiuso e sicuro nel suo cuore più intimo,\\
+si nasconde il seme della perfezione.\\
+\hspace{1mm}\emph{Walt Whitman - Canto dell'universale}
+\end{quote}
+
+\begin{quote}«La metafora è probabilmente la forza più feconda che l'uomo possieda.»\\
+\hspace{1mm}\emph{Jos\'e Ortega y  Gasset - La disumanizzazione dell'arte}
+\end{quote}
+
+L'esibizione Atto XI racchiude cinque brani che inglobano le varie forme della musica elettronica, passando da un live-electronics a un acustico e tape, finendo con un acusmatico. I titoli di questi lavori hanno come filo conduttore il rapporto tra l'ambiente e la natura umana che li integra e li unisce.}
+
+\emph{M. Mascaro}
+\end{quote}    
+
+
+\vspace{3mm}
+
+\begin{multicols}{2}
+
+\input{Atto11.tex}
+
+
+\end{multicols}
+
+\clearpage
+%----------------------------------------------------------------------------------------
+
+\section*{14 ottobre 2015 -- ore 18:00}
+
+\subsection*{{\small Concerto Acusmatico \& Live Electronics\footnote{ Il concerto verrà trasmesso in diretta streaming da Radio Cemat}} \\
+	\textsf{Auditorium Ennio Morricone}}
+
+{\fontsize{30}{30} \svolk{\emph{ATTO XII}}}
+
+\subsection*{\textsf{Regia del suono di Francesco Bianco}}
+
+\begin{quote}
+{\svolk \small
+Fine EMUFest. Ultimi suoni. Gli ultimi comandi in esecuzione ai calcolatori. Le connessioni attendono il termine delle loro trasmissioni. Gli ultimi brani. L'ultima ricerca per una Nuova Musica. Quella ricerca che sembra essere la più nuova: all'estremo del pensiero tecnologico e del come è stato utile piegare questo a ciò che ci è servito. Ultima tappa di una strada ancora lunga. Saprà il nostro Spirito essere al comando di un'anima tecnologica?
+
+I 4 brani presentati in questo ultimo concerto di EMUFest 2015 provengono da parti del mondo differenti, eppure parlano un comune linguaggio, stagliandosi in poetiche condivise: lo studio del timbro, l'analisi dei comportamenti acustici, la composizione musicale miscelata ad un pensiero tecnologico. Linguaggi comuni, eppure diversi: ogni brano mantiene il contatto con ciò che gli ha fornito i motivi stessi della sua esistenza, il contesto dal quale viene, il mondo nel quale è cresciuto, la realtà che affronta e il come la affronta.
+}
+
+\emph{F. Bianco}
+\end{quote}    
+
+\bigskip
+
+\vspace{3mm}
+
+\begin{multicols}{2}
+
+\input{Atto12.tex}
+
+
+\end{multicols}
+
+\clearpage
+
+
+%\afterpage{\blankpage}
+
+%\afterpage{\blankpage}
+
+\section*{ }
+
+\subsection*{\textsf{Autori ed Esecutori}\\}
+
+{\fontsize{30}{30} \svolk{\emph{Biografie}}}
+
+\bigskip
+
+\begin{multicols}{2}
+
+\input{biografieTorVergata.tex}
+
+
+\end{multicols}
+
+\afterpage{\blankpage}
+
+\clearpage
+
+
+\section*{ }
+
+\begin{center}
+
+\input{organizzazione.tex}
+
+\end{center}
+
+
+%\begin{figure}[!h]
+%\centering
+%\includegraphics[width=6.4cm]{loghi.jpg}
+%%\caption{}
+%%\label{fig2_42}
+%\end{figure}
+
+\end{document}
