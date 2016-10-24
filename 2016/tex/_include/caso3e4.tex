@@ -2,7 +2,9 @@
 % !TEX TS-program = XeLaTex
 % !TEX root = ../EMU2016_booklet.tex
 
-\begin{flushright}
+\begin{flushleft}
+
+~\vfill
 
 \large{
 	\scshape{
@@ -35,37 +37,35 @@ un external per \emph{Pure Data} che implementa un sistema di analisi e sintesi 
 Il suono \`e acquisito % e sintetizzato tramite un riconoscimento di similarit\`a tra i grani audio, usando un insieme di descrittori audio estratti in tempo differito per i corpora sonora e in tempo reale%i
 ed analizzato mediante un insieme di descrittori audio estratti in tempo differito. Il processo di sintesi in tempo reale avviene mediante riconoscimento di similarit\`a tra i grani audio dei \emph{corpora sonora} analizzati e il segnale in tempo reale.
 
-La catena di processo avviene, in tempo differito, segmentando il file e generando i grani, eseguendo successivamente un'analisi di ognuno di questi ed estraendone i descrittori che contribuiscono alla creazione di un albero \emph{k}-dimensionale e una lista di \emph{k}-primi vicini per ogni grano generato, dove ogni grano \`e rappresentato da un insieme di punti. La sorgente entra in \pa, ne vengono estratti i descrittori in tempo reale ed il grano pi\`u simile viene trovato nell'albero. Partendo dall'elemento trovato ed usando la sua lista di primi vicini si rende disponibile un insieme di grani per la sintesi. L'obiettivo principale del lavoro \`e l'audio mosaicing in tempo reale. 
-Questa presentazione descrive anche come \pa ~sia usato nella composizione di Giuseppe Silvi per sassofono aumentato ed elettronica dal vivo *S4EF*. \\
-Questa lavoro \`e stato scritto considerando \pa ~il principale algoritmo per l'elaborazione numerica del segnale, l'analisi sonora e la sintesi in Pure Data. 
-S4EF si focalizza su due aspetti principali:
-\begin{itemize}
-\item la forma esterna della diffusione del sassofono e la sua sintesi utilizzando il sistema omnidirezionale di diffusori S.T.ONE sviluppato da uno degli Autori;
-\item l'acustica del fluido dentro il sassofono e la sua relazione con il feedback acustico attraverso la sintesi in \pa .
-\end{itemize}
+%La catena di processo avviene, in tempo differito, segmentando il file e generando i grani, eseguendo successivamente un'analisi di ognuno di questi ed estraendone i descrittori che contribuiscono alla creazione di un albero \emph{k}-dimensionale e una lista di \emph{k}-primi vicini per ogni grano generato, dove ogni grano \`e rappresentato da un insieme di punti.
 
-\noindent
-La presentazione \`e organizzata come segue:
-\begin{itemize}
-\item presentazione di \pa ;
-\item funzionalit\`a di \pa ;
-\item dimostrazione di \pa ~ed esempli di sassofono estratti da S4EF;
-\item sviluppi futuri;
-\item domande.
-\end{itemize}
+La sorgente entra in \pa, ne vengono estratti i descrittori in tempo reale ed il grano pi\`u simile viene trovato nell'albero. Partendo dall'elemento trovato ed usando la sua lista di primi vicini si rende disponibile un insieme di grani per la sintesi. L'obiettivo principale del lavoro \`e l'audio mosaicing in tempo reale. 
 
-\noindent
-La presentazione finir\`a con un'improvvisazione:
-\begin{itemize}
-\item Marco Matteo Markidis, elettronica;
-\item Giuseppe Silvi, sassofono baritono e contralto.
-\end{itemize}
+Questa presentazione descrive anche come \pa ~sia usato nella composizione di Giuseppe Silvi per sassofono aumentato ed elettronica dal vivo *S4EF*. Questa lavoro \`e stato scritto considerando \pa ~il principale algoritmo per l'elaborazione numerica del segnale, l'analisi sonora e la sintesi in Pure Data. 
+%S4EF si focalizza su due aspetti principali:
+%\begin{compactitem}
+%\item la forma esterna della diffusione del sassofono e la sua sintesi utilizzando il sistema omnidirezionale di diffusori S.T.ONE sviluppato da uno degli Autori;
+%\item l'acustica del fluido dentro il sassofono e la sua relazione con il feedback acustico attraverso la sintesi in \pa .
+%\end{compactitem}
 
-\end{flushright}
+%\noindent
+%La presentazione \`e organizzata come segue:
+%\begin{compactitem}
+%\item presentazione di \pa ;
+%\item funzionalit\`a di \pa ;
+%\item dimostrazione di \pa ~ed esempli di sassofono estratti da S4EF;
+%\item sviluppi futuri;
+%\item domande.
+%\end{compactitem}
 
-\clearpage
+%\noindent
+%La presentazione finir\`a con un'improvvisazione:
+%\begin{compactitem}
+%\item Marco Matteo Markidis, elettronica;
+%\item Giuseppe Silvi, sassofono baritono e contralto.
+%\end{compactitem}
 
-\begin{flushleft}
+
 
 ~\vfill
 \large{
