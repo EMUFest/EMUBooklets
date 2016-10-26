@@ -1,0 +1,259 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTex
+
+\documentclass[9pt,
+			   twoside
+			   ]{extreport}
+
+\usepackage[document]{ragged2e}
+			   
+\usepackage[paperwidth=10.5cm,
+			paperheight=29.7cm,
+			%margin=.707cm
+			top=1cm,
+			bottom=1cm,
+			outer=1.2cm,
+			inner=.707cm,
+			%headsep=14pt
+			]{geometry}
+
+\usepackage{latexsym}
+
+\usepackage[polutonikogreek,
+			italian,
+			english
+			]{babel}
+
+\usepackage[hang,
+			small,
+			labelfont=bf,
+			up,
+			textfont=it,
+			]{caption}
+			
+\usepackage{float,
+			afterpage,
+			graphicx,
+			amssymb,
+			epstopdf,
+			pst-barcode,
+			hyperref,
+			titlesec,
+			tcolorbox,
+			color
+			}
+
+\definecolor{supercolor}{RGB}{3,39,36}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Source Sans Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Source Sans Pro}
+\setmonofont[]{Source Code Pro}
+
+\newfontfamily{\svolk}{Volkhov}
+
+\linespread{1.03}
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\renewcommand{\thefootnote}{\textasteriskcentered}
+
+\newtcbox{\mybox}{nobeforeafter,
+				  colframe=supercolor,
+				  colback=supercolor,
+				  boxrule=0.5pt,
+				  arc=8pt,
+				  boxsep=0pt,
+				  left=2pt,
+				  right=2pt,
+				  top=6pt,
+				  bottom=2pt,
+				  tcbox raise base
+				  }
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{./_include/comandi2016.tex}
+
+\def\pa{\emph{path\kern-.05em\lower.011ex\hbox{$\sim$}\kern-.86em\lower-.3ex\hbox{.}}~}
+
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\flushright{
+	\svolk{\large CONSERVATORIO DI MUSICA S. CECILIA} \\
+	\vspace{.1em}
+	\fontsize{48}{48}
+	\svolk{\emph{EMUFest 2016}}} \\
+		\svolk{OTTOBRE 2016 \\
+		ROMA}}
+
+\author{}
+
+\vfill
+
+\date{}
+
+%\dedica{.2\textwidth}{\small A Monica:\\
+%per tutto ciò che mi hai insegnato\\
+%e per tutto ciò che ancora avresti dovuto insegnarmi.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle 
+
+%-------------------------------------------------------------------------------------
+%\begin{flushright}
+
+\large{
+	\scshape{
+	24 ottobre 2016 -- ore 15:30 -- 18:30
+	}}
+
+\medskip
+	
+\small{Conferenza
+	\newline Sala Medaglioni}
+
+\medskip
+
+{\fontsize{42}{42} \svolk{\emph{Caso I}}}
+
+\normalfont
+
+\normalsize
+
+\bigskip
+
+Conferenza tenuta da \textsc{Giorgio Netti} con la partecipazione dell' \textsc{mdi ensemble}
+
+\bigskip
+
+\textbf{\emph{Sulla volontà del suono}}
+
+Creazione e interpretazione musicale
+
+\begin{flushright}
+
+\large{
+	\scshape{
+	24 ottobre 2016 -- ore 20:30
+	}}
+
+\medskip
+	
+\small{Concerto
+	\newline Sala Accademica}
+
+\medskip
+
+{\fontsize{42}{42} \svolk{\emph{Volontà I}}}
+
+\normalsize
+
+\medskip
+
+regia del suono \textsc{Pasquale Citera} e \textsc{Marco De Martino}
+
+\bigskip
+
+\livel{Tristan Murail}{C’est un jardin secret, ma soeur, ma fiancée, \newline  une source scellée, una fontaine close…}{5’00}{per viola}{1976}
+
+\medskip
+
+\livel{Iannis Xenakis}{Mikka}{4’25}{violino}{1971}
+\medskip
+
+\livel{Pascal Dusapin}{Inside}{8’32}{per viola}{1980}
+\medskip
+
+\livel{Giorgio Netti}{Dalla tentazione di Sant’Antonio}{9’00}{per violino}{1986}
+\medskip
+
+\livel{Giacinto Scelsi}{Manto II}{5’10}{per viola}{1967}
+\medskip
+
+\livel{Helmut Lachenmann}{Toccatina}{4’50}{per violino}{1986}
+\medskip
+
+\livel{Giorgio Netti}{Inoltre}{17’00}{per due violini}{2005-2006}
+
+%\brano{Christian Eloy}
+%{La cicatrice d'Ulysse}{13'00''}
+%{acusmatico}
+%new version 2015\\
+
+%\acusmatici{Ursula Meyer-K\"onig}
+%{Allears}{2012-13}{8'}
+
+%\vspace{6mm}
+
+\bigskip
+
+\textbf{mdi ensemble} \\
+\esecutore{violino}{Lorenzo Gentili-Tedeschi}
+\esecutore{viola}{Paolo Fumagalli}
+
+\vfill
+
+\bigskip
+
+\svolk{\emph{Ho cercato di incanalare quell’energia in un percorso che la rendesse percepibile senza snaturarne l’essenza: l’energia che abita i violini di Corelli, Tartini, Vivaldi, certo non citazioni ne dirette ne indirette ma l’imprevedibile vitalità delle loro articolazioni (tremoli, arpeggi, ribattuti, sincronie e fioriture improvvise) che hanno fatto della scuola italiana, elettrica ante litteram, un irraggiungibile modello di virtuosismo strumentale; poi la tensione, il vuoto attorno e dentro alla costruzione delle frasi, le imitazioni, i pedali, la continua sovrapposizione delle corde.}}
+
+Giorgio Netti
+
+\normalfont
+
+\end{flushright}
+
+\clearpage
+
+\begin{flushleft}
+
+~\vfill
+
+\descrizione{C’est un jardin secret, ma soeur, ma fiancée, une source scellée, una fontaine close…}{Fondatore insieme a Gerard Grisey della musica “spettrale”, Murail utilizza l’informatica per approfondire le ricerche d’analisi e sintesi dei fenomeni ascustici, costruendo una musica basata sulle micro-variazioni interne al suono. C’est un jardin secret… presenta questo percorso di ricerca: una miniatura per viola attraversata da molteplici processi, trasformazioni progressive e ambiguità tra armonia e timbro. Un brano, afferma il compositore, costruito attorno al ritmo di un battito cardiaco, costantemente accellerato e rallentato, vivo e risonante.}
+
+\descrizione{Mikka}{Riconosciuto tra gli esponenti più radicali della musica del 900, il compositore greco Iannis Xenakis compone il brano Mikka nel 1971 e l’anno successivo eseguito al Festival D’automne de Paris. Il brano è un impressionante fusione di glissati del violino che pongono l’accento su una materia incisa in limite estremo dell’accezione di melodia. Un suono/canto dell’arco che oscilla tra i suoni più sottili fino alle dinamiche più accese.}
+
+\descrizione{Inside}{Diviso in tre parti, il brano mette in luce il grande ventaglio timbrico della viola, in una articolazione frenetica ed immersiva. Anche questo brano presenta micro-variazioni del suono instaurando un dialogo quarti-tonale tra le corde.}
+
+\descrizione{Dalla tentazione di Sant’Antonio}{…Ho cercato di ripensare lo strumento a partire dalla sua memoria, dalla memoria delle dita che per secoli l’hanno attraversato: ho cercato di ascoltarlo come voce di voci e dallo stratificarsi nell'aria di queste, dal loro sovrapporsi, ha preso corpo il volume dello spazio nel quale è contenuto. Le diverse “apparizioni” vorrebbero arrivare a comporre via via un’unità, che non determina una direzione quanto un sostare: stato incandescente della materia sonora, non solidifica, s’addensa e, sospeso, prossimo a saturarsi viene nell’ultimo respiro infine travasato…}
+
+\descrizione{Manto II}{Secondo movimento per Viola, Manto prende il nome da un profeta dell’antica Grecia. Scelsi incentra il brano sulle soglie del battimento e sugli aspetti liminari del suono. Qui il rito è alla base dell’estetica del compositore, percepibile come vero e proprio ponte/distanza tra il tempo immobile e il successivo canto umano che accompagna il terzo movimento.}
+
+\descrizione{Toccatina}{Helmut Lachenmann consegna in eredità al fare musicale una continua nuova percezione dell’ascolto. Questo studio per violino, apre una nuova finestra, indicando \emph{un possibile oltre a ciò che abitualmente chiamiamo musica} (G. Netti): una nuova sensibilità dello strumento, che parte da un idea di musica concreta strumentale, fattasi  sottile e cristallina in questa breve dischiusura musicale}
+
+\descrizione{Inoltre}{Starting from a muted blow, INOLTRE becomes a continuous attempt to bring the sound matter nearer to the pitched musical world, creating an acoustic experience coming from somewhere else. (Quotation from the Composer) This composition makes the matter white hot and in its boiling, articulations, fragments, nightmares and wanderings reappear and melting become something else. A voice-violin, a sound-man, sacred in their uniqueness, with no more articulation, tense and suspended on the extreme and guarded electric background.}
+
+***
+
+\biografia{Giorgio Netti}{nasce nel 1963 a Milano. Ha studiato composizione con Sandro Gorli presso il conservatorio G. Verdi di Milano e  partecipato ai corsi della sezione di musica contemporanea della Civica Scuola di Musica nella stessa città con B. Ferneyhough, G. Grisey, E. Nunes, W. Rihm, I. Xenakis. giorgionetti.com}
+
+
+\end{flushleft}
+
+\clearpage
+
+\flushright
+~\vfill
+
+
+\biografia{Paolo Fumagalli}{ Nato nel 1978, si è diplomato in violino sotto la guida di Elena Ponzoni presso il Conservatorio *Cantelli* di Novara e in viola con Roberto Tarenzi presso il Conservatorio *Nicolini* di Piacenza, perfezionandosi poi con Maja Jokanovic, Claudio Pavolini e Simonide Braconi in Italia e in Svizzera. Ha tenuto concerti come camerista invitato dalle Settimane Musicali di Stresa, dal festival Ligeti-Milano Musica, dalla Fondazione *Fernando Rielo* di Roma, da Contemporaneamente Lodi, Teatro Bibiena di Mantova, Teatro Municipale Piacenza, Amici della Musica Palermo, Nuova Consonanza Roma, Staatsoper Stuttgart, Europa Musica, Musica y Escena Mexico City, WDR Koln. Prima viola dell’Orchestra Giovanile *Luigi Cherubini* diretta da Riccardo Muti dal 2005 al 2008, con lo stesso incarico viene chiamato dall’Orchestra La Fenice di Venezia e dal Teatro G. Verdi di Trieste. Collabora stabilmente con diverse formazioni orchestrali diretto da L. Maazel, Y. Temirkanov, R. Barshai, K. Masur, E. Inball. E’ stato membro del sestetto d’archi dell’accademia del Teatro alla Scala, col quale si è esibito al Festival di Ravello, al ridotto dei palchi Teatro alla Scala partecipando poi a tourneè internazionali in Asia e in Sud America. Collabora con le più importanti formazioni da camera italiane che si occupano del repertorio contemporaneo, come Divertimento Ensemble, Sentieri Selvaggi, Ensemble Icarus, Ensemble Risognanze, Xenia Ensemble. Attualmente insegna viola presso la scuola *Dedalo* di Novara. Ha effettuato registrazioni per Stradivarius, Ricordi Oggi, Aeon Paris e per la WestDeutscheRundfunk ha inciso un duo inedito per viola, arpa e elettronica  di Robert HP Platz.}
+
+%2016-734:
+\biografia{Lorenzo Gentili-Tedeschi}{ Nato a Milano nel 1988, si diploma con lode a soli sedici anni presso l’Istituto Musicale Pareggiato Donizetti di Bergamo, laureandosi due anni dopo con 110 e lode nel Biennio Specialistico del Conservatorio di Milano. Si perfeziona con Francesco De Angelis presso l’Haute Ecole de Musique di Losanna-Sion, dove consegue il MasterSoliste nel 2010 eseguendo il concerto di Beethoven op.61 con l’Orchestre de Chambre de Lausanne. Per i successivi due anni insegna come assistente di De Angelis presso la medesima istituzione. Dal 2014 è membro dei London Philharmonic Orchestra, con cui suona alla Royal Festival Hall e alla Royal Albert Hall di Londra per i BBC Proms, effettua tour in Europa, Stati Uniti, Cina e partecipa al prestigioso festival operistico di Glyndebourne, Inghilterra.
+ Da anni collabora stabilmente con alcune delle più importanti orchestre italiane: Filarmonica della Scala, Orchestra del Teatro alla Scala e del Teatro Regio di Torino, Orchestra da Camera di Mantova e Solisti di Pavia, diretto da grandi direttori quali Gustavo Dudamel, Daniel Barenboim, Riccardo Chailly, Yuri Temirkanov e molti altri. È invitato regolarmente come violino di spalla presso l’orchestra del Teatro Petruzzelli di Bari, dopo essere stato per cinque anni primo violino di spalla dell’Orchestra dell’Accademia del Teatro alla Scala, suonando anche come solista nel Kammerkonzert di Alban Berg per la stagione de I concerti del Quirinale in diretta su Radio3. Nel 2012 ha preso parte alla Lucerne Festival Academy, lavorando con Pierre Boulez e Pablo Heras Casado come violino di spalla dell’ensemble.}
+
+\end{document}
