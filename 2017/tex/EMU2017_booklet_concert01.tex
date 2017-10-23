@@ -1,0 +1,348 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTex
+
+\documentclass[9pt,
+			   twoside
+			   ]{extreport}
+
+\usepackage[document]{ragged2e}
+			   
+\usepackage[paperwidth=10.5cm,
+			paperheight=29.7cm,
+			%margin=.707cm
+			top=1cm,
+			bottom=1cm,
+			outer=1.2cm,
+			inner=.707cm,
+			%headsep=14pt
+			]{geometry}
+
+\usepackage{latexsym}
+
+\usepackage[polutonikogreek,
+			italian,
+			english
+			]{babel}
+
+\usepackage[hang,
+			small,
+			labelfont=bf,
+			up,
+			textfont=it,
+			]{caption}
+			
+\usepackage{float,
+			afterpage,
+			graphicx,
+			amssymb,
+			epstopdf,
+			pst-barcode,
+			hyperref,
+			titlesec,
+			tcolorbox,
+			color
+			}
+
+\definecolor{supercolor}{RGB}{3,39,36}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Source Sans Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Source Sans Pro}
+\setmonofont[]{Source Code Pro}
+
+\newfontfamily{\svolk}{Volkhov}
+
+\linespread{1.03}
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\renewcommand{\thefootnote}{\textasteriskcentered}
+
+\newtcbox{\mybox}{nobeforeafter,
+				  colframe=supercolor,
+				  colback=supercolor,
+				  boxrule=0.5pt,
+				  arc=8pt,
+				  boxsep=0pt,
+				  left=2pt,
+				  right=2pt,
+				  top=6pt,
+				  bottom=2pt,
+				  tcbox raise base
+				  }
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{./_include/_comandi2017.tex}
+
+\def\pa{\emph{path\kern-.05em\lower.011ex\hbox{$\sim$}\kern-.86em\lower-.3ex\hbox{.}}~}
+
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\flushright{
+	\svolk{\large CONSERVATORIO DI MUSICA S. CECILIA} \\
+	\vspace{.1em}
+	\fontsize{48}{48}
+	\svolk{\emph{EMUFest 2017}}} \\
+		\svolk{OTTOBRE 2017 \\
+		ROMA}}
+
+\author{}
+
+\vfill
+
+\date{}
+
+%\dedica{.2\textwidth}{\small A Monica:\\
+%per tutto ciò che mi hai insegnato\\
+%e per tutto ciò che ancora avresti dovuto insegnarmi.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle 
+
+%-------------------------------------------------------------------------------------
+%\begin{flushright}
+\cleardoublepage
+
+
+\begin{flushleft}
+
+\large{
+	\scshape{
+	23 ottobre 2017 -- ore 20:00
+	}}
+
+\medskip
+	
+\small{Concerto
+	\newline Sala Accademica}
+
+\medskip
+
+{\fontsize{20}{20} \svolk{\emph{Concerto I}}}
+
+\normalsize
+
+\medskip
+
+regia del suono \textsc{Pasquale Citera} e \textsc{Marco De Martino}
+
+\bigskip
+
+ 
+
+\livel{Franck Bedrossian}{Propaganda}{10’00}{per quartetto di sassofoni e dispositivo elettronico}{2008}
+\medskip
+
+\livel{Giorgio Nottoli}{Ellenikà}{6’00}{acusmatico}{2013}
+\medskip
+
+\livel{James Dashow}{Soundings in Pure Duration n.9 *}{13'40}{per flauto basso e suoni elettronici ottofonici}{2017}
+\medskip
+
+\livel{Pierre Jodlowski}{Time \& Money}{14'00}{per percussioni ed elettronica}{2004}
+\medskip
+
+\livel{Demien Rudel Rey}{Khēmia I}{5'30}{per contrabbasso ed elettronica}{2016}
+\medskip
+
+\livel{John Cage}{FOUR\textsuperscript{5}}{12'00}{per ensemble di sassofoni}{1991}
+\medskip
+
+\bigskip
+* prima esecuzione assoluta
+
+\bigskip
+
+\esecutore{Saxatile\textsuperscript{4} [\textbf{m}odulable \textbf{s}axophone \textbf{e}nsemble]}{Enzo Filippetti, Danilo Perticaro, Alessandro Scalone, Maurizio Schifitto,\\Marzia Marianantoni, Giulia De Mico, Cristiano Cerroni,\\Francesco De Cicco}
+\esecutore{flauto}{Manuel Zurria}
+\esecutore{percussioni}{Ivan Liuzzo}
+\esecutore{contrabbasso}{Mauro Tedesco}
+\esecutore{live electronics}{James Dashow, Federico Scalas}
+
+
+\vfill
+
+\descrizione{Propaganda}{Il quartetto di sassofoni ha sempre stimolato la mia curiosità in quanto costituisce in sé quasi uno strumento elettronico. L’omogeneità dei timbri del quartetto, la loro elasticità e capacità di fondersi sono tali che, a tratti, si potrebbe credere che i sassofoni siano sottoposti naturalmente a trasformazioni elettroacustiche. L’idea di fondere questo ensemble con l’elaborazione di suoni elettronici, quindi, mi ha permesso di sviluppare quest’impressione di flessibilità. La scrittura strumentale stessa, inoltre, favorisce l’ampliarsi di tessiture tra tra gli strumenti acustici e l’elettronica provocando incontri inaspettati o conflittuali. Questo brano è stato commissionato da James Giroudon a cui è anche dedicata la composizione.}
+
+\end{flushleft}
+
+
+%\clearpage
+
+\begin{flushright}
+
+~\vfill
+
+\descrizione{Ellenikà}{Questo lavoro è costituito da registrazioni effettuate in Grecia durante due permanenze presso l’isola di Thassos, nel 2012 e nel 2013. Le registrazioni includono sia suoni naturali che, sebbene ripresi in Grecia, potrebbero provenire da qualsiasi zona del Mediterraneo che eventi sonori parlati in Greco. Alcune delle  registrazioni di parlato provengono da luoghi affollati quali i mercati del paese in cui i richiami dei mercanti prevalgono sul brusio della folla altre dalla lettura di versi di poeti Greci del periodo classico tra cui Saffo e Alceo.\\
+Il materiale parlato è stato analizzato in modo da ottenere l’andamento di alcuni parametri base, relativi a intonazione e durate, che vanno a costituire l’articolazione base della composizione. Le altezze sono usate per filtrare i materiali concreti ottenendo complesse mutazioni tonali; per esempio all’inizio del brano il suono del mare, filtrato attraverso risonatori intonati sulle altezze di un canone, viene lentamente trasformato in timbro chiaro e variato. La composizione è divisa in due sezioni: nella prima parte dominano suoni naturali, nella seconda quelli della voce umana che si fa via via più intelligibile. Il risultato musicale si basa su un lento e graduale gioco di alternanze tra astrazione e rivelazione degli elementi del paesaggio sonoro.}
+
+\descrizione{Soundings in Pure Duration n. 9}{Questo particolare "Soundings" continua le esplorazioni del compositore nelle tre dimensioni principali del suo lavoro:  le strutture delle altezze, il timbro e, soprattutto, la spazializzazione. Il timbro è costruito grazie alle procedure pilotate dalle altezze, che a loro volta sono derivate da un uso rigoroso del suo Sistema Diadi. Queste strutture sono poi sincronizzate con varie elaborazioni dello spazio che circonda l'ascoltatore. Spazi e settori di spazio di diverse dimensioni, spesso simultanei oltre che in succesione, sono utilizzati insieme a traiettorie multiple (la "coreografia" dei suoni) nello spazio. Tutti questi elementi sono integrati in un complesso concetto musicale di spazio-timbro. Come al solito, il solista è il punto focale di tutta questa attività, e spesso è lui l'innesco per il movimento spaziale. Soundings in Pure Duration n.9 è composto e dedicato a Manuel Zurria.}
+
+\descrizione{Time \& Money}{Questo brano è stato composto dopo "People /Time", lavoro di musica da camera commissionato dal festival di Donaueschingen nel 2003. Condivide con esso lo stesso in interrogativo che riguarda la nostra società, i nostri comportamenti con il tempo e il denaro. È un sorta di contestazione al nostro sistema economico, dove l'argomento diventa una sorta di quadro musicale [...] la musica inizia con cicli e cicli di modelli ritmici in cui la presenza di suoni radio e film (soprattutto dialoghi) stanno producendo un secondo strato di percezione per il pubblico, attivando alcune memorie collettive. E la musica inizia ad andare sempre più veloce, proprio come a volte accade  nelle nostre vite, così spaventati nel perdere il tempo ...}
+
+\descrizione{Khēmia I}{il titolo del brano si riferisce a degli assi concettuali (\textit{Khēmia} vuol dire \textit{trasmutazione}, un termine collegato all’alchimia). Il contrabbasso e i materiali elettroacustici sono \textit{trasmutati} attraverso processi di saturazione, dove si mischiano in qualcosa di complesso, in un instabile mondo di suoni. D’altra parte, il processo opposto applica la separazione di queste due sorgenti di suono (lo strumento e gli altoparlanti), a elementi ancora differenti. Ci sono materiali consonanti (armonicamente stabili, o semplici spettralmente) che esprimono onirismo opposto agli oggetti sonori caotico, saturati e altamente complessi.}
+
+\descrizione{FOUR\textsuperscript{5}}{Note singole in un intervallo di tempo flessibile per quattro sassofoni, o multipli di quattro. Le frequenze non suoneranno come scritto. L’intonazione è propria di ogni singolo musicista. Se il suono è duraturo, la dinamica è leggera. I suoni brevi hanno dinamica libera, anche lo sforzato se voluto, o il pianissimo.}
+
+
+\end{flushright}
+
+
+~\vfill
+
+\textbf{\emph{Biografie Artisti}}
+
+
+%2016-701:
+%\biografia{}{ }
+
+\biografia{Franck Bedrossian}{ Ha studiato con Gaussin, Leroux, Ferneyhough, Murail, Manoury e Lachenmann. I suoi lavori sono eseguiti in Festival internazionali da ensemble tra cui: l’Itineraire, 2e2m, Court-Circuit, Ensemble Modern, Intercontemporain, Orchestre National de Lyon, San Francisco Contemporary Music Players. Nel 2001 riceve una borsa di studio dalla Meyer Foundation e nel 2004 vince il premio Hervé-Dugardin (Sacem). Nel 2005 l’Institut de France (Académie des Beaux-Arts) gli conferisce il “Prix Pierre Cardin” per la composizione. Nel 2006-08 è in residenza a Villa Medici. Da settembre 2008 è assistente professore di composizione alla University of California-Berkeley. I suoi lavori sono pubblicati dalla Editions Bilaudot.}
+
+
+\biografia{John Cage}{Studia con Schoenberg, Cowell, Suzuki, Fuller e Duchamp. Docente alla Cornish School di Seattle, al Mills College di Oakland, al Chi- cago Institute of Design, al Black Mountain College, alla New School for Social Research di New York dal 1936 al 1960. Grazie alla sua grande inventiva come compositore, pensatore e scrittore, ha un posto in prima fila nell’avanguardia internazionale del Novecento. Elabora un linguaggio intimo e rivoluzionario partendo dalla dissacrazione totale delle "regole" musicali classiche. Inventa le composizioni per "pianoforte preparato" e introduce la “casualità” in musica. Fra le sue opere più importanti si citano: Music for Marcel Duchamp (1947); Concerto for prepared piano and chamber orchestra (1951); Music of changes (1951); Atlas eclipticalis (1961); Etudes Australes (1974- 75); Quartets I-VIII (1976) per orchestra; Thirty pieces for five orchestras (1981).}
+
+
+\biografia{James Dashow}{ compositore, dedica la sua principale attività compositiva alla computer music, spesso con esecutori dal vivo, pur non trascurando la musica per strumenti tradizionali. La sua attività di ricerca sfocia nella creazione di un suo linguaggio di sintesi, MUSIC30, ed un suo metodo di composizione, il Sistema Diadi. Uno dei fondatori del Centro Sonologia Computazionale di Padova. Nel 2011, la Fondazione CEMAT (Roma) gli ha conferito il premio CEMAT per la Musica per il suo contributo allo sviluppo della musica elettronica. Ha insegnato al MIT dove ha ricoperto il ruolo di direttore supplente dello Studio di Musica Sperimentale, e alla Princeton University. È stato vice-presidente nel primo comitato direttivo dell'International Computer Music Association, e per molti anni ha condotto il programma radiofonico *Il Forum Internazionale di Musica Contemporanea* per RAI Radio 3. I suoi lavori sono registrati su DVD, CD e LP di varie case discografiche italiane ed estere: BMG Ariola - RCA, Wergo, EdiPan, Capstone, Neuma, ProViva, CRI, Scarlatti Classica, BVHAAST e Centaur.}
+
+%\clearpage
+%\flushleft
+%~\vfill
+
+\biografia{Enzo Filippetti}{ è professore di Sassofono al Conservatorio di Musica “Santa Cecilia”. In oltre trent’anni di attività ha tenuto concerti in tutto il mondo esibendosi alla Biennale di Venezia, al Mozarteum di Salisburgo, al Conservatorio di Parigi, a Roma, Milano, New York, Londra. È molto attivo nel campo della musica contemporanea, di cui è apprezzato interprete, e molti importanti compositori hanno scritto per lui più di cento opere. Come solista e come membro del Quartetto di Sassofoni Accademia ha inciso per Nuova Era, Dynamic, Rai Trade e Cesmel. Ha pubblicato studi per Riverberi Sonori e dirige una collana per le edizioni Sconfinarte.}
+
+\clearpage
+\flushright
+~\vfill
+
+
+
+
+
+%2016-714:
+%\clearpage
+%\flushleft
+%~\vfill
+
+\biografia{Pierre Jodlowski}{ Dopo gli studi presso il Conservatorio di Lione e l'IRCAM, Pierre Jodlowski fonda il collettivo l'éOle  e il Novelum Festival a Tolosa. Le sue attività di compositore lo hanno portato in molti luoghi della Francia e all'ester, per la nuova musica assieme alla danza, al teatro, le arti plastiche e la musica elettronica. Oltre al suo universo musicale Jodlowski lavora con immagini, programmazione interattiva e sceneggiatura. Asserisce la pratica di una musica "attiva" sia nella sua dimensione fisica (gesti, energie e spazi) che nella sua dimensione psicologica (evocazione, memoria e aspetto cinematografico). Ha ricevuto commissioni da IRCAM, l'Ensemble Intercontemporain, il Ministero della Cultura, il CIRM, il Festival di Donaueschingen, la Radio France e il Concorso Pianistico di Orléans.}
+
+
+%2016-719:
+\biografia{Ivan Liuzzo}{ nasce a Frosinone il 26 febbraio 1993 ed inizia a studiare la batteria all’età di 9 anni con M. FIOCCO, successivamente con G.GUIDONI e A.BLASI. Nel 2007 intraprende gli studi delle percussioni presso il Conservatorio *L.Refice* di Frosinone con il M° C. DI BLASI, conseguendo il diploma (V.O.). Ha approfondito lo studio della batteria jazz con R. PISTOLESI e G. HUTCHINSON. Membro attivo e co-fondatore del Collettivo Phthorà, assieme a F. Ferazzoli e F. Abbate ha collaborato con artisti come: Lisa Mezzacappa, Stefano Costanzo, Vincenzo Core, Wound, Ron Grieco, Achille Succi ecc.}
+
+%\clearpage
+%\flushleft
+%~\vfill
+
+%\flushright
+%~\vfill
+
+
+\biografia{Giorgio Nottoli}{ (compositore, nato a Cesena, Italia nel 1945) è stato docente di Musica Elettronica al Conservatorio di Roma "S.Cecilia" sino al 2013. Attualmente è docente di Composizione elettroacustica all’Università di Roma "Tor Vergata". La maggior parte delle sue opere utilizza mezzi elettronici sia per la sintesi che per l'elaborazione del suono. Il centro della sua ricerca di musicista riguarda il timbro concepito quale parametro principale e *unità costruttiva* delle sue opere attraverso la composizione della microstruttura del suono. Nei suoi lavori per strumenti ed elettronica Giorgio Nottoli punta ad estendere la sonorità degli strumenti acustici mediante complesse elaborazioni del suono. Ha progettato vari sistemi elettronici per la musica utilizzando sia tecnologie analogiche che digitali in collaborazione con varie università e centri di ricerca.}
+
+\biografia{Demien Rudel Rey}{(Argentina, 1987) Si diploma in chitarra. Laurea in Composizione con Santiago Satero e ha conseguito il Master in Arti Combinate all’UNA (Argentina). Ha presenziato a seminari con Dhomont, Vaggione, Tutschku, etc. È iscritto al Master in Composizione al CNSMD di Lione con Martin Matalon. È stato coordinatore del Festival Bahía[in]sonora. È stato premiato/menzionato in occasione dei seguenti eventi; TRINAC, SADAIC, Destellos, FAUNA, IndieFEST, Konex Mozart Award, Martirano Award, Sagarik Award, CICEM, Métamorphoses, MA/IN, Prix Jolivet, Forum Wallis, Earplay, etc.}
+
+%2016-737:
+\biografia{Saxatile\textsuperscript{4} [\textbf{m}odulable \textbf{s}axophone \textbf{e}nsemble]}{ è un progetto realizzato da un’idea di Enzo Filippetti nell’ambito del Conservatorio di Musica “S. Cecilia” specificatamente rivolto all’esecuzione della musica contemporanea, nei suoi molteplici aspetti, con un orientamento diretto alla ricerca e all’instaurazione di un rapporto dialettico con altri artisti e con i compositori. I componenti possono vantare una solida, variegata esperienza.}
+
+\clearpage
+\flushleft
+~\vfill
+
+
+\biografia{Mauro Tedesco}{ Allievo del M°Daniele Roccato presso il conservatorio S.Cecilia di Roma. Membro dell'ensamble di contrabbassi Ludus Gravis (www.ludusgravis.com) dedito nel repertorio contemporaneo il quale ha collaborato con compositori di fama internazionale come Terry Riley, Sofia Gubaidulina , Julio Estrada etc. Si è esibito con artisti di nota importanza come Dominique Pifarely e Michele Rabbia presso l'Auditorium parco della musica di Roma durante il festival "Una striscia di terra feconda" organizzato da Paolo Damiani e Armand Meignan; con Luca Sanzò presso l'Accademia Filarmonica Romana nel festival "Paesaggi Sonori" organizzato da Michelangelo Lupone e Giorgio Nottoli; Ha recentemente fatto parte del progetto "Assedio, frammenti di un reportage" organizzato da Lucia Goracci, reporter di Rainews24 presso la Siria, che vede coinvolta anche l'Istituzione Sinfonica Abruzzese con musiche di Tonino Battista e Daniele Roccato presso l'Auditorium del parco di L' Aquila e il Teatro dei Rinnovati a Siena.}
+
+\biografia{Manuel Zurria}{ Sono nato a Catania nel 1962. Pur avendo tentato altre esperienze in giro per il mondo, sono sempre ritornato a vivere a Roma, mio malgrado. Ho partecipato a prime assolute di Pennisi, Bussotti, Clementi, Guarnieri, Donatoni, Vacchi e Francesconi. Collaboro da molti anni con Sciarrino e Lucier. Ho partecipato a Festival internazionali, in tutto il mondo. La mia discografia conta attualmente 40 tra CDs e vinili per etichette quali Ricordi, Capstone, EdiPan, Stradivarius, Die Schachtel, Mazagran, Mode, Megadisc, God, Atopos, Touch, Another Timbre.}
+
+\clearpage
+
+\flushright
+
+
+\large{
+	\scshape{
+	24 ottobre 2017 -- ore 10:00 -- 13:30
+	}}
+
+\medskip
+	
+\small{Masterclass
+	\newline Aula Bianchini}
+
+\medskip
+
+{\fontsize{20}{20} \svolk{\emph{GRM Tools\\e la spazializzazione}}}
+
+\normalfont
+
+\normalsize
+
+\bigskip
+
+Masterclass tenuta da \textsc{Emmanuel Favreau}\\{\footnotesize direttore scientifico dell'INA-GRM di Parigi}
+
+
+\bigskip
+
+Dopo una breve introduzione storica sul GRM e il suo approccio alla musica concreta, presenterò nei dettagli alcuni dispositivi GRM Tools. L’accento è posto, in particolare, sugli ultimi dispositivi dedicati alla spazializzazione 2D, 3D e binaurale con alcune dimostrazioni sulla cupola di 22 altoparlanti.
+
+\bigskip
+
+\small{Evento ArteScienza2017 realizzati in collaborazione\\con il CRM - Centro Ricerche Musicale}
+
+\vfill
+
+\large{
+	\scshape{
+	24 ottobre 2017 -- ore 18:00
+	}}
+
+\medskip
+
+\small{Concerto Acusmatico
+	\newline Il Suono di Piero [Aula Bianchini]}
+
+\medskip
+
+
+{\fontsize{20}{20} \svolk{\emph{Concerto Acusmatico II}}}
+
+\normalsize
+
+\medskip
+
+regia del suono \textsc{Federico Paganelli}
+
+\bigskip
+
+\livel{Francis Dhomont}{PHŒNIX XXI}{16'31}{}{2016}
+\medskip
+
+\livel{Giuseppe Pisano}{Termiti}{4'02}{}{2017}
+\medskip
+
+\livel{Diego Ratto}{Echoss}{8'15}{}{2017}
+\medskip
+
+\livel{Roberto Begini}{Kymbalon 3}{8'30}{}{2017}
+\medskip
+
+\livel{Alessandro Perini}{Étude Tendu}{8'35}{}{2017}
+\medskip
+
+
+
+\end{document}

@@ -1,0 +1,19 @@
+\documentclass[a4paper]{article}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+% regola: multiplo di 2 esempio 16 pagine
+% 1 16 15 2 3 14 13 4 5 12 11 6 7 10 9 8
+
+\includepdf[pages={1,48,47,2,3,46,45,4,5,44,43,6,7,42,41,8,9,40,39,10,11,38,37,12,13,36,35,14,15,34,33,
+					16,17,32,31,18,19,30,29,20,21,28,27,22,23,26,25,24},
+			nup=2x1,
+			noautoscale, 
+            %frame,
+            %signature*=8, %landscape, 
+            angle=180,
+            %delta=0 1cm
+            ]{EMU2016_booklet}
+\end{document}

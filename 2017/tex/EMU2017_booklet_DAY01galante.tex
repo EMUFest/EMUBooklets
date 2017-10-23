@@ -1,0 +1,326 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTex
+
+\documentclass[9pt,
+			   twoside
+			   ]{extreport}
+
+\usepackage[document]{ragged2e}
+			   
+\usepackage[paperwidth=10.5cm,
+			paperheight=29.7cm,
+			%margin=.707cm
+			top=1cm,
+			bottom=1cm,
+			outer=1.2cm,
+			inner=.707cm,
+			%headsep=14pt
+			]{geometry}
+
+\usepackage{latexsym}
+
+\usepackage[polutonikogreek,
+			italian,
+			english
+			]{babel}
+
+\usepackage[hang,
+			small,
+			labelfont=bf,
+			up,
+			textfont=it,
+			]{caption}
+			
+\usepackage{float,
+			afterpage,
+			graphicx,
+			amssymb,
+			epstopdf,
+			pst-barcode,
+			hyperref,
+			titlesec,
+			tcolorbox,
+			color
+			}
+
+\definecolor{supercolor}{RGB}{3,39,36}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Source Sans Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Source Sans Pro}
+\setmonofont[]{Source Code Pro}
+
+\newfontfamily{\svolk}{Volkhov}
+
+\linespread{1.03}
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\renewcommand{\thefootnote}{\textasteriskcentered}
+
+\newtcbox{\mybox}{nobeforeafter,
+				  colframe=supercolor,
+				  colback=supercolor,
+				  boxrule=0.5pt,
+				  arc=8pt,
+				  boxsep=0pt,
+				  left=2pt,
+				  right=2pt,
+				  top=6pt,
+				  bottom=2pt,
+				  tcbox raise base
+				  }
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{./_include/_comandi2017.tex}
+
+\def\pa{\emph{path\kern-.05em\lower.011ex\hbox{$\sim$}\kern-.86em\lower-.3ex\hbox{.}}~}
+
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\flushright{
+	\svolk{\large CONSERVATORIO DI MUSICA S. CECILIA} \\
+	\vspace{.1em}
+	\fontsize{48}{48}
+	\svolk{\emph{EMUFest 2017}}} \\
+		\svolk{OTTOBRE 2017 \\
+		ROMA}}
+
+\author{}
+
+\vfill
+
+\date{}
+
+%\dedica{.2\textwidth}{\small A Monica:\\
+%per tutto ciò che mi hai insegnato\\
+%e per tutto ciò che ancora avresti dovuto insegnarmi.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle 
+
+%-------------------------------------------------------------------------------------
+%\begin{flushright}
+
+\begin{flushright}
+
+\large{
+	\scshape{
+	23 ottobre 2017 -- ore 16
+	}}
+
+\medskip
+	
+\small{Conferenza
+	\newline Aula Bianchini}
+
+\medskip
+
+{\fontsize{18}{18} \svolk{\emph{Composizione, ragioni ed utopie, mutamenti del suono nella musica elettroacustica}}}
+
+\normalfont
+
+\normalsize
+
+\bigskip
+
+Conferenza tenuta da \textsc{Francesco Galante}\\{\footnotesize Docente presso il Conservatorio Stanislao Giacomantonio di Cosenza}
+
+\bigskip
+
+Partendo da un nucleo di composizioni elettroniche ed elettroacustiche, che appartengono alla personale produzione musicale dal 1984 ad oggi, si illustreranno alcune  direzioni compositive intraprese nel rapporto musica/tecnologie, e le ragioni e le utopie  che hanno sostenuto il paradigma del comporre il suono. Mettendo anche a confronto sul piano storico-critico alcune delle questioni musicali e tecnologiche esistenti negli anni 70 e lo stato delle cose musicali del nostro tempo in ambito tecnologico.
+
+\bigskip
+
+A seguire \textbf{\emph{Concerto Acusmatico I}}\\
+con composizioni di Francesco Galante.
+
+
+
+~\vfill
+%\large{
+%	\scshape{
+%	23 ottobre 2016 -- ore 17
+%	}}
+%
+%\medskip
+%	
+\small{Concerto Acusmatico
+	\newline Il Suono di Piero [Aula Bianchini]}
+
+\medskip
+
+
+{\fontsize{20}{20} \svolk{\emph{Concerto Acusmatico I}}}
+
+\normalsize
+
+\medskip
+
+regia del suono \textsc{Francesco Galante}\\
+assistente \textsc{Massimiliano Mascaro}
+
+\bigskip
+
+\livel{}{Lontano}{7’10}{}{1984-85}
+\medskip
+
+\livel{}{Restroscena, memoria di una voce}{7’20}{}{2002-03}
+\medskip
+
+\livel{}{Metafonie I}{10’30}{}{1993}
+\medskip
+
+\livel{}{Liberare la Terra dalla Immobilità Fissata}{9’40}{}{2012}
+\medskip
+
+\livel{}{Metafonie V}{8’50}{a Giacinto Scelsi}{2013}
+\medskip
+
+
+
+\vfill
+
+
+\descrizione{Lontano}{Realizzato presso la SIM di Roma, è la prima opera interamente digitale da me composta. In un periodo di studio dei fenomeni psicoacustici che mi portarono a immaginare una musica “a-timbrica”, una \textit{musica sinusoidale} nella quale la materia sonora è sempre in divenire. Un flusso ritmico regolato dalle diverse velocità dei battimenti e dalla reazione sensoriale che essi determinano. Uno stadio pre-timbrico - quindi - della materia sonora, dove le tessiture sinusoidali operano al di fuori delle leggi che regolano il timbro, “lontano” appunto dalla fusione che lo determina. Questa “rinuncia” apre  all’ascolto una idea realmente spaziale del suono.}
+
+\descrizione{Restroscena, memoria di una voce}{Un omaggio a Carmelo Bene, al suo Teatro della phonè.  Un melologo “virtuale” in cui voce originale ma trattata in studio, ed elaborata (scomposizione in strutture molecolari della parola-suono)costruiscono un possibile Teatro Acusmatico, immaginario. Una estensione dei suoi esperimenti di alterazione microfonica della voce, solo accennati negli anni 60/70 e mai portati alle estreme conseguenze. Sono stati utilizzati frammenti di testo da me ricavati dall’opera Majakoskij (versione del 1980) e rimontati, liberamente, secondo una personale drammaturgia musicale che non ha nulla a che vedere con l’opera originale.  Tra le opere vincitrici del concorso CEMAT 2004.}
+
+
+\end{flushright}
+
+\clearpage
+
+\begin{flushleft}
+
+
+\descrizione{Metafonie I}{ aggiorna gli studi sui fenomeni psicoacustici già intrapresi nelle composizioni precedenti, ed adopera ora la sintesi timbrica FM ma con un uso non tradizionale della stessa. La  forma musicale si lega alla tecnica del continuum e alle textures timbriche. Per la realizzazione fu definito un doppio temperamento, sia tradizionale che una divisione in 12 parti di intervallo di terza poi esteso sulle diverse “ottave”. Tecnologie utilizzate: 2 FM Yamaha Tx81z, riverberatore SPX90II, un computer ATARI 1040. Le morfologie sonore sono ricavate da clusters granulari di onde FM.}
+
+\descrizione{Liberare la Terra dalla Immobilità Fissata}{E’ un brano composto da una ampia serie di pannelli sonori in cui è l’elemento della voce a svolgere, assieme ai suoni elettronici, un ruolo drammaturgico e para-semantico, determinante. Ciascun pannello, mediamente di identica durata, è indipendente ed è il montaggio a determinare un arco formale che dal “semplice” si muove verso un molteplice. Il titolo prende spunto dalle letture di Giordano Bruno “è necessario liberare la terra dalla falsa immobilità”. Questa frase si riferisce alla condizione morale, politica e religiosa del suo tempo, ma di straordinaria forza e attualità.}
+
+\descrizione{Metafonie V}{ (a Giacinto Scelsi) è stata composta nel 25° anno dalla morte di G.Scelsi, compositore determinante per il suo agire compositivo che parte dalla natura del suono. Essa prosegue una ricerca musicale che si avvale della sintesi sonora FM, tecnica che tuttora possiede potenzialità interessanti in termini di risultati morfologici ambigui. Dopo aver composto nel 1993  Metafonie I , ho ripreso negli ultimi dieci anni a lavorare anche e nuovamente in questa  direzione, in cui sperimentare zone di confine percettivo e semantico del suono generato elettronicamente.}
+
+\vfill
+
+\large{
+	\scshape{
+	23 ottobre 2017 -- ore 17:30
+	}}
+
+\medskip
+	
+\small{Tavola rotonda
+	\newline Aula Bianchini}
+
+\medskip
+
+{\fontsize{20}{20} \svolk{\emph{Un ITER in atto}}}
+
+\normalfont
+
+\normalsize
+
+\bigskip
+
+Introduzione di \textsc{Franco Sbacco}\\
+{\footnotesize Docente presso il Conservatorio Santa Cecilia di Roma}
+
+
+\bigskip
+
+\textbf{\emph{Ripercorrendo i 10 anni di EMUFest}}
+
+\medskip
+
+Nato nel 2008, l’EMUFest, Festival Internazionale di Musica Elettroacustica del Conservatorio Santa Cecilia, ha segnato una svolta epocale nel panorama italiano sia riguardo all’informazione sulla ricerca, sperimentazione compositiva e analisi della musica elettronica e della computer music, sia nel selezionare e proporre, di anno in anno, nuove opere acusmatiche, dal vivo con elettronica, audiovisuali e installative. Si fa il punto sul cammino percorso e ci si interroga sul futuro, con particolare attenzione agli aspetti formativi e di crescita tecnico-musicale degli studenti.
+
+
+\vfill
+
+
+
+***
+
+\end{flushleft}
+
+\clearpage
+
+\begin{flushleft}
+
+\large{
+	\scshape{
+	23 ottobre 2017 -- ore 20:00
+	}}
+
+\medskip
+	
+\small{Concerto
+	\newline Sala Accademica}
+
+\medskip
+
+{\fontsize{20}{20} \svolk{\emph{Concerto I}}}
+
+\normalsize
+
+\medskip
+
+regia del suono \textsc{Pasquale Citera} e \textsc{Marco De Martino}
+
+\bigskip
+
+ 
+
+\livel{Franck Bedrossian}{Propaganda}{10’00}{per quartetto di sassofoni e dispositivo elettronico}{2008}
+\medskip
+
+\livel{Giorgio Nottoli}{Ellenikà}{6’00}{acusmatico}{2013}
+\medskip
+
+\livel{James Dashow}{Soundings in Pure Duration n.9 *}{13'40}{per flauto basso e suoni elettronici ottofonici}{2017}
+\medskip
+
+\livel{Pierre Jodlowski}{Time \& Money}{14'00}{per percussioni ed elettronica}{2004}
+\medskip
+
+\livel{Demien Rudel Rey}{Khēmia I}{5'30}{per contrabbasso ed elettronica}{2016}
+\medskip
+
+\livel{John Cage}{FOUR\textsuperscript{5}}{12'00}{per ensemble di sassofoni}{1991}
+\medskip
+
+\bigskip
+* prima esecuzione assoluta
+
+\bigskip
+
+\esecutore{Saxatile\textsuperscript{4} [\textbf{m}odulable \textbf{s}axophone \textbf{e}nsemble]}{Enzo Filippetti, Danilo Perticaro, Alessandro Scalone, Maurizio Schifitto,\\Marzia Marianantoni, Giulia De Mico, Cristiano Cerroni,\\Francesco De Cicco}
+\esecutore{flauto}{Manuel Zurria}
+\esecutore{percussioni}{Ivan Liuzzo}
+\esecutore{contrabbasso}{Mauro Tedesco}
+\esecutore{live electronics}{James Dashow, Federico Scalas}
+
+
+\vfill
+
+
+\end{flushleft}
+
+
+%\clearpage
+
+\end{document}

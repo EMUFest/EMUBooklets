@@ -1,0 +1,159 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTex
+
+\documentclass[8pt,
+			   twoside
+			   ]{extreport}
+
+\usepackage[document]{ragged2e}
+			   
+\usepackage[paperwidth=10.5cm,
+			paperheight=29.7cm,
+			%margin=.707cm
+			top=1cm,
+			bottom=1cm,
+			outer=1.2cm,
+			inner=.707cm,
+			%headsep=14pt
+			]{geometry}
+
+\usepackage{latexsym}
+
+\usepackage[polutonikogreek,
+			italian,
+			english
+			]{babel}
+
+\usepackage[hang,
+			small,
+			labelfont=bf,
+			up,
+			textfont=it,
+			]{caption}
+			
+\usepackage{float,
+			afterpage,
+			graphicx,
+			amssymb,
+			epstopdf,
+			pst-barcode,
+			hyperref,
+			titlesec,
+			tcolorbox,
+			color
+			}
+
+\definecolor{supercolor}{RGB}{3,39,36}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[BoldFont=Fira Sans SemiBold,Mapping=tex-text]{Fira Sans Light}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Fira Sans Light}
+\setmonofont[]{Source Code Pro}
+
+\newfontfamily{\svolk}{Volkhov}
+
+%\linespread{1.01}
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\renewcommand{\thefootnote}{\textasteriskcentered}
+
+\newtcbox{\mybox}{nobeforeafter,
+				  colframe=supercolor,
+				  colback=supercolor,
+				  boxrule=0.5pt,
+				  arc=8pt,
+				  boxsep=0pt,
+				  left=2pt,
+				  right=2pt,
+				  top=6pt,
+				  bottom=2pt,
+				  tcbox raise base
+				  }
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{./_include/_comandi2017.tex}
+
+\def\pa{\emph{path\kern-.05em\lower.011ex\hbox{$\sim$}\kern-.86em\lower-.3ex\hbox{.}}~}
+
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\flushright{
+	\svolk{\large CONSERVATORIO DI MUSICA S. CECILIA} \\
+	\vspace{.3em}
+	\fontsize{48}{48}
+	\svolk{\emph{EMUFest 2017}}} \\
+		\svolk{OTTOBRE \\
+		ROMA}}
+
+\author{}
+
+\vfill
+
+%\flushright{emufest.org}
+
+\date{}
+
+%\dedica{.2\textwidth}{\small A Monica:\\
+%per tutto ciò che mi hai insegnato\\
+%e per tutto ciò che ancora avresti dovuto insegnarmi.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle 
+
+\cleardoublepage
+
+~\vfill
+
+\input{./_include/motto.tex}
+
+\newpage
+
+%-------------------------------------------------------------------------------------
+\input{./_include/conf1acusmatico1.tex}
+
+\clearpage
+
+\input{./_include/concerto1.tex}
+
+\clearpage
+
+\input{./_include/conf2acusmatico2.tex}
+
+\clearpage
+
+\input{./_include/conf3acusmatico3.tex}
+
+\clearpage
+
+\input{./_include/concerto2.tex}
+
+\clearpage
+
+\input{_include/conf4e5.tex}
+
+~
+
+\clearpage
+
+~
+
+\clearpage
+
+\input{./_include/organizzazione.tex}
+
+\end{document}
